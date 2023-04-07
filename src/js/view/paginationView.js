@@ -7,7 +7,6 @@ class PaginationView extends View {
   _parentElement = document.querySelector('.pagination');
   _renderMarkup() {
     const totalPage = Math.ceil(this._data.result.length / RESULT_PER_PAGE);
-    console.log(totalPage);
     //ruong hop o trang dau tien ma co 1 trang
     if (this._data.currPg === 1 && totalPage === 1) return ``;
     // truong hop o trang dau tien ma co 2 trang tro len

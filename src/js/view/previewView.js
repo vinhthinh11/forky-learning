@@ -5,7 +5,6 @@ class PreviewView extends View {
 
   _renderMarkup() {
     const id = window.location.hash.slice(1);
-    console.log();
     return `<li class="preview">
             <a class="preview__link ${
               this._data.id === id ? 'preview__link--active' : ''

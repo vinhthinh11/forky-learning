@@ -7,7 +7,6 @@ class BookmarkView extends View {
     window.addEventListener('load', handler);
   }
   _renderMarkup() {
-    console.log(this._data);
     return this._data
       .map(result => PreviewView._render(result, false))
       .join('');

@@ -47,7 +47,6 @@ const controlSearchRecipe = async function () {
   await model.loadSearchResults(query);
   resultsView._render(model.getSearchResultPage(model.state.search.currPg));
   paginationView._render(model.state.search);
-  console.log(model.state.search.result);
 };
 
 const controlPagination = function (isNext) {

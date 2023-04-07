@@ -5,7 +5,6 @@ class ResultsView extends View {
   _errorMessage = `No recipes found for your query. Please try again!`;
 
   _renderMarkup() {
-    console.log(this._data);
     return this._data
       .map(result => previewView._render(result, false))
       .join('');
